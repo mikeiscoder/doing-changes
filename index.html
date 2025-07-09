@@ -1,8 +1,88 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>hello world</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopKart - Flipkart Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>this is my 1st program</h1>
-    <p>please check it</p>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 flex justify-between items-center text-white">
+    <div class="text-2xl font-bold">ShopKart</div>
+    <div class="w-1/2">
+      <input type="text" placeholder="Search for products, brands and more" class="w-full p-2 rounded-md text-black" />
+    </div>
+    <div class="flex space-x-4">
+    <a href="login.html" class="hover:underline text-white">Login</a>
+      <button class="hover:underline">Cart</button>
+      <button class="hover:underline">More</button>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="flex">
+
+    <!-- Sidebar Categories -->
+    <aside class="w-1/5 bg-white p-4 shadow-md">
+      <h2 class="text-lg font-semibold mb-4">Categories</h2>
+      <ul class="space-y-2 text-blue-700">
+        <li class="hover:underline cursor-pointer">Mobiles</li>
+        <li class="hover:underline cursor-pointer">Laptops</li>
+        <li class="hover:underline cursor-pointer">Fashion</li>
+        <li class="hover:underline cursor-pointer">Home</li>
+        <li class="hover:underline cursor-pointer">Grocery</li>
+      </ul>
+    </aside>
+
+    <!-- Products Grid -->
+    <main class="flex-1 p-6">
+      <h2 class="text-2xl font-bold mb-4">Top Deals</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="samsung.png" alt="Product" class="mx-auto mb-2">
+          <h3 class="text-lg font-semibold">Samsung Galaxy M14</h3>
+          <p class="text-gray-600 text-sm">6GB RAM | 128GB ROM</p>
+          <p class="text-green-600 font-bold mt-2">₹13,999</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-1 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+        <!-- Repeat More Product Cards -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="apple.png" alt="Product" class="mx-auto mb-2">
+          <h3 class="text-lg font-semibold">Apple iPhone 14</h3>
+          <p class="text-gray-600 text-sm">128GB | Midnight</p>
+          <p class="text-green-600 font-bold mt-2">₹69,999</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-1 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="sony.png" alt="Product" class="mx-auto mb-2">
+          <h3 class="text-lg font-semibold">Sony Headphones</h3>
+          <p class="text-gray-600 text-sm">Noise Cancelling</p>
+          <p class="text-green-600 font-bold mt-2">₹3,499</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-1 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="dell.png" alt="Product" class="mx-auto mb-2">
+          <h3 class="text-lg font-semibold">Dell Inspiron 15</h3>
+          <p class="text-gray-600 text-sm">i5 12th Gen | 8GB RAM</p>
+          <p class="text-green-600 font-bold mt-2">₹52,000</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-1 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-4 mt-6 shadow-inner">
+    © 2025 ShopKart - Flipkart Clone for Learning Purpose
+  </footer>
+
 </body>
+</html>
